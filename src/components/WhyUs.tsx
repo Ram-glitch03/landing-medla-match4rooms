@@ -4,28 +4,28 @@ import { CheckCircle2, TrendingDown, ShieldCheck, Star } from "lucide-react";
 export default function WhyUs() {
   const stats = [
     {
-      label: "Reserva rápida",
+      label: "Firma Digital en 24h",
       value: "24h",
       icon: <CheckCircle2 size={24} />,
-      description: "Confirmamos tu reserva en menos de 24 horas para que no pierdas tiempo ni oportunidades.",
+      description: "Proceso 100% online y sin papeleo interminable. Asegura tu habitación desde tu móvil antes de llegar a la ciudad.",
     },
     {
-      label: "100% Verificadas",
+      label: "Garantía Anti-Estafas",
       value: "✓",
       icon: <ShieldCheck size={24} />,
-      description: "Todas nuestras habitaciones son revisadas personalmente por nuestro equipo antes de publicarse.",
+      description: "Propiedades auditadas legalmente por MEDLA. Lo que ves en fotos es exactamente donde vas a vivir.",
     },
     {
-      label: "Ahorro medio",
-      value: "€150",
+      label: "Ahorro garantizado",
+      value: "€200",
       icon: <TrendingDown size={24} />,
-      description: "Negociamos los mejores precios y condiciones adaptados al presupuesto estudiantil.",
+      description: "Evita gastos de gestión abusivos e inmobiliarias tradicionales. Precios transparentes adaptados a estudiantes.",
     },
     {
-      label: "Recomendación",
-      value: "98%",
+      label: "Red de Estudiantes",
+      value: "10k+",
       icon: <Star size={24} />,
-      description: "Casi todos nuestros usuarios nos recomiendan a sus compañeros de facultad.",
+      description: "Únete a la comunidad de estudiantes internacionales que ya confían en Match4Rooms para su estadía.",
     },
   ];
 
@@ -84,21 +84,27 @@ export default function WhyUs() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-3xl space-y-5 flex flex-col justify-between"
+                whileHover={{ scale: 1.02, y: -5 }}
+                transition={{ delay: index * 0.1, duration: 0.3 }}
+                className="p-8 rounded-3xl space-y-5 flex flex-col justify-between hover:shadow-xl transition-all duration-300 border border-transparent hover:border-brand-accent/20 cursor-default"
                 style={{ backgroundColor: "#F5F3EF" }}
               >
                 <div className="flex justify-between items-start">
                   <div style={{ color: "#1A1A2E", fontFamily: '"Playfair Display", serif', fontWeight: 700, fontSize: "2.5rem", lineHeight: 1 }}>
                     {stat.value}
                   </div>
-                  <div style={{ color: "rgba(201,168,76,0.5)" }}>{stat.icon}</div>
+                  <motion.div
+                    whileHover={{ rotate: 15, scale: 1.1 }}
+                    style={{ color: "rgba(201,168,76,0.8)" }}
+                  >
+                    {stat.icon}
+                  </motion.div>
                 </div>
                 <div className="space-y-2">
                   <h4 className="text-lg" style={{ color: "#1A1A2E", fontFamily: '"Playfair Display", serif', fontWeight: 700 }}>
                     {stat.label}
                   </h4>
-                  <p className="text-sm leading-relaxed" style={{ color: "rgba(26,26,46,0.55)", fontFamily: '"DM Sans", sans-serif' }}>
+                  <p className="text-sm leading-relaxed" style={{ color: "rgba(26,26,46,0.65)", fontFamily: '"DM Sans", sans-serif' }}>
                     {stat.description}
                   </p>
                 </div>

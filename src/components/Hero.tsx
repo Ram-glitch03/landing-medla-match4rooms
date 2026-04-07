@@ -28,10 +28,10 @@ export default function Hero() {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
               <p className="section-eyebrow mb-4" style={{ color: "#C9A84C" }}>
-                Tu habitación ideal, garantizada
+                Alojamiento Premium para Estudiantes
               </p>
               <h1 className="hero-title text-white">
-                Tu hogar<br />estudiantil
+                Tu hogar ideal<br />cerca del campus
               </h1>
             </motion.div>
 
@@ -43,7 +43,7 @@ export default function Hero() {
                 className="max-w-md text-lg leading-relaxed"
                 style={{ color: "rgba(255,255,255,0.8)", fontFamily: '"DM Sans", sans-serif' }}
               >
-                Encontramos la habitación perfecta para tu etapa universitaria con claridad, seguridad y cercanía a tu campus.
+                Descubre habitaciones verificadas, totalmente seguras y equipadas para que vivas la mejor experiencia universitaria desde el primer día. Sin sorpresas ni letra pequeña.
               </motion.p>
 
               <motion.a
