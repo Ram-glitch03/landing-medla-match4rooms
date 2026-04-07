@@ -61,7 +61,7 @@ export default function FAQ() {
                   ¿Tienes más dudas? Nuestro equipo está listo para ayudarte.
                 </p>
                 <a
-                  href="https://medla-asesores.com/agenda-tu-cita/" target="_blank" rel="noopener noreferrer"
+                  href="#contact"
                   className="inline-block px-8 py-4 bg-white rounded-full font-bold transition-all"
                   style={{ color: "#1A1A2E", fontFamily: '"DM Sans", sans-serif', border: "1px solid #E8E5DE", textDecoration: "none" }}
                   onMouseEnter={e => { e.currentTarget.style.backgroundColor = "#1A1A2E"; e.currentTarget.style.color = "#ffffff"; }}

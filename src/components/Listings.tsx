@@ -206,7 +206,7 @@ export default function Listings() {
 
         <div className="flex justify-center pt-8">
           <a
-            href="https://medla-asesores.com/agenda-tu-cita/" target="_blank" rel="noopener noreferrer"
+            href="#contact"
             className="px-10 py-4 rounded-full font-bold transition-all flex items-center gap-2 group"
             style={{ border: "1.5px solid #1A1A2E", color: "#1A1A2E", fontFamily: '"DM Sans", sans-serif', textDecoration: "none" }}
             onMouseEnter={e => { e.currentTarget.style.backgroundColor = "#1A1A2E"; e.currentTarget.style.color = "#ffffff"; }}
