@@ -63,6 +63,36 @@ const listings = [
     status: "Disponible",
     image: "https://framerusercontent.com/images/D2Rosu46lk7tmVyYhuODw5KE6Qs.webp",
   },
+  {
+    id: 7,
+    title: "Habitación Loft para Estudiantes",
+    location: "Malasaña, Madrid",
+    price: "€500/mes",
+    specs: { sqft: "22", beds: "1", baths: "Privado" },
+    type: "Habitación",
+    status: "Disponible",
+    image: "https://images.unsplash.com/photo-1522771731478-44710c28d116?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 8,
+    title: "Piso Estudiantil Entero",
+    location: "Ciudad Universitaria, Salamanca",
+    price: "€850/mes",
+    specs: { sqft: "75", beds: "3", baths: "1" },
+    type: "Piso Completo",
+    status: "Disponible",
+    image: "https://images.unsplash.com/photo-1502672260266-1c1de2d9d1c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: 9,
+    title: "Habitación Económica Campus",
+    location: "Campus de Teatinos, Málaga",
+    price: "€280/mes",
+    specs: { sqft: "12", beds: "1", baths: "Compartido" },
+    type: "Habitación",
+    status: "Próximamente",
+    image: "https://images.unsplash.com/photo-1560185007-caccf4c28f32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+  }
 ];
 
 export default function Listings() {
@@ -176,7 +206,7 @@ export default function Listings() {
 
         <div className="flex justify-center pt-8">
           <a
-            href="#contacto"
+            href="https://medla-asesores.com/agenda-tu-cita/" target="_blank" rel="noopener noreferrer"
             className="px-10 py-4 rounded-full font-bold transition-all flex items-center gap-2 group"
             style={{ border: "1.5px solid #1A1A2E", color: "#1A1A2E", fontFamily: '"DM Sans", sans-serif', textDecoration: "none" }}
             onMouseEnter={e => { e.currentTarget.style.backgroundColor = "#1A1A2E"; e.currentTarget.style.color = "#ffffff"; }}
