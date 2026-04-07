@@ -28,10 +28,10 @@ export default function Hero() {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
               <p className="section-eyebrow mb-4" style={{ color: "#C9A84C" }}>
-                Alojamiento Premium para Estudiantes
+                Alojamiento Premium Universitario
               </p>
               <h1 className="hero-title text-white">
-                Tu hogar ideal<br />cerca del campus
+                Tu hogar<br />ideal
               </h1>
             </motion.div>
 
