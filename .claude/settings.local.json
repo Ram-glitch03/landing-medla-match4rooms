@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(export PATH=\"$PATH:/usr/local/bin:/opt/homebrew/bin\")",
+      "Bash(export PATH=\"$PATH:/opt/homebrew/bin\")",
+      "Bash(npm install:*)",
+      "Bash(open http://localhost:3003)"
+    ]
+  }
+}

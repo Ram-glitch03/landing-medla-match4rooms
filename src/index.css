@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+
+  --color-brand-bg: #1A1A2E;
+  --color-brand-card: #14142a;
+  --color-brand-accent: #C9A84C;
+  --color-brand-muted: #F5F3EF;
+  --color-brand-border: #E8E5DE;
+  --color-brand-text: #3A3A4E;
+  --color-brand-subtle: #9A9AB0;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-white font-sans antialiased;
+    color: #3A3A4E;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+}
+
+.glass-card {
+  @apply bg-white/10 backdrop-blur-md border border-white/20;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.hero-title {
+  font-size: clamp(4rem, 13vw, 11rem);
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.section-eyebrow {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
